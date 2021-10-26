@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Asteroid___Neo_Stats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="LeU-cX-iwv">
+                                <rect key="frame" x="39.5" y="84" width="335" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-Zy-TLO">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="110"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="hdx-yt-YsQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="215" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xy-Dd-ErW">
+                                                        <rect key="frame" x="0.0" y="15" width="83.5" height="20.5"/>
+                                                        <color key="tintColor" red="0.40780961510000002" green="0.40786200760000002" blue="0.40779179329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="0.40780961510000002" green="0.40786200760000002" blue="0.40779179329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="EfE-jn-d80">
+                                                        <rect key="frame" x="107.5" y="0.0" width="107.5" height="50"/>
+                                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                        <connections>
+                                                            <action selector="startDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="o5m-TF-WuK"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="aE3-AK-5gB">
+                                                <rect key="frame" x="0.0" y="60" width="212.5" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-HB-KTy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="50"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-Nr-8Il">
+                                                        <rect key="frame" x="104.5" y="0.0" width="108" height="50"/>
+                                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="endDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZLd-fz-dmR"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yST-dd-foU">
+                                        <rect key="frame" x="255" y="38.5" width="80" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="5Nu-aU-3sr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nga-v2-lRt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSx-Po-0B1" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="0U3-Qk-JwW">
+                                <rect key="frame" x="10" y="266.5" width="394" height="127.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fastest Astroid in Km/h :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-2f-TLM">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closest Astroid in km:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bJ-Z7-82n">
+                                        <rect key="frame" x="0.0" y="53.5" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average size Km :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGe-wh-iYL">
+                                        <rect key="frame" x="0.0" y="107" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dkE-2f-TLM" firstAttribute="leading" secondItem="0U3-Qk-JwW" secondAttribute="leading" id="6g4-gE-IMA"/>
+                                    <constraint firstAttribute="trailing" secondItem="9bJ-Z7-82n" secondAttribute="trailing" id="HPO-rm-AVW"/>
+                                    <constraint firstItem="9bJ-Z7-82n" firstAttribute="leading" secondItem="0U3-Qk-JwW" secondAttribute="leading" id="OQq-ax-s9t"/>
+                                    <constraint firstAttribute="trailing" secondItem="KGe-wh-iYL" secondAttribute="trailing" id="g8I-eq-oUA"/>
+                                    <constraint firstItem="KGe-wh-iYL" firstAttribute="leading" secondItem="0U3-Qk-JwW" secondAttribute="leading" id="i6R-SY-Hmp"/>
+                                    <constraint firstAttribute="trailing" secondItem="dkE-2f-TLM" secondAttribute="trailing" id="wHz-YI-HDs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xSx-Po-0B1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1Np-w8-hLf"/>
+                            <constraint firstItem="LeU-cX-iwv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Dkk-dW-jh5"/>
+                            <constraint firstItem="xSx-Po-0B1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="E1f-Uu-Di4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xSx-Po-0B1" secondAttribute="trailing" id="ML1-yo-BcM"/>
+                            <constraint firstItem="LeU-cX-iwv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QhE-RW-xMt"/>
+                            <constraint firstItem="xSx-Po-0B1" firstAttribute="top" secondItem="0U3-Qk-JwW" secondAttribute="bottom" constant="20" id="UCC-Nw-rEl"/>
+                            <constraint firstItem="0U3-Qk-JwW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jQf-Wc-SQ1"/>
+                            <constraint firstItem="0U3-Qk-JwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kt3-OC-U8W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0U3-Qk-JwW" secondAttribute="trailing" constant="10" id="rX9-XL-ctI"/>
+                            <constraint firstItem="xSx-Po-0B1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tno-mq-gYr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="averageSizeLabel" destination="KGe-wh-iYL" id="zgc-Lq-rU5"/>
+                        <outlet property="closestAstroidLabel" destination="9bJ-Z7-82n" id="NfK-LP-Wgi"/>
+                        <outlet property="endDate" destination="bcP-Nr-8Il" id="scZ-Os-pco"/>
+                        <outlet property="fastestAstroidLabel" destination="dkE-2f-TLM" id="yHN-Y5-ifa"/>
+                        <outlet property="lineCharView" destination="xSx-Po-0B1" id="c6g-sV-wLz"/>
+                        <outlet property="startDate" destination="EfE-jn-d80" id="4fI-bP-RfG"/>
+                        <outlet property="submitButton" destination="yST-dd-foU" id="8YD-RW-j6u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
