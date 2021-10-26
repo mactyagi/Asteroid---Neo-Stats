@@ -53,9 +53,6 @@
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-Nr-8Il">
                                                         <rect key="frame" x="104.5" y="0.0" width="108" height="50"/>
                                                         <color key="tintColor" systemColor="systemBlueColor"/>
-                                                        <connections>
-                                                            <action selector="endDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZLd-fz-dmR"/>
-                                                        </connections>
                                                     </datePicker>
                                                 </subviews>
                                             </stackView>
